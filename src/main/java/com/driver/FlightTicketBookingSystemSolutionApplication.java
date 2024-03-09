@@ -10,19 +10,19 @@ public class FlightTicketBookingSystemSolutionApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(FlightTicketBookingSystemSolutionApplication.class, args);
 	}
-	 @Bean
-	    public FlightRepository flightRepository() {
-	        return new InMemoryFlightRepository();
-	    }
+	@Bean
+	public FlightRepository flightRepository() {
+		return new InMemoryFlightRepository();
+	}
 
-	    @Bean
-	    public FlightBookingService flightBookingService(FlightRepository flightRepository) {
-	        return new FlightBookingServiceImpl(flightRepository);
-	    }
+	@Bean
+	public FlightBookingService flightBookingService(FlightRepository flightRepository) {
+		return new FlightBookingServiceImpl(flightRepository);
+	}
 
-	    @Bean
-	    public FlightBookingController flightBookingController(FlightBookingService flightBookingService) {
-	        return new FlightBookingController(flightBookingService);
-	    }
+	@Bean
+	public FlightBookingController flightBookingController(FlightBookingService flightBookingService) {
+		return new FlightBookingController(flightBookingService);
+	}
 
 }

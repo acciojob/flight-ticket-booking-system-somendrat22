@@ -1,86 +1,84 @@
 package com.driver;
 
 public class Flight {
-	 private int id;
-	    private String flightNumber;
-	    private String origin;
-	    private String destination;
-	    private double price;
-	    private int capacity;
-	    private int availableSeats;
+	private int id;
+	private String flightNumber;
+	private String origin;
+	private String destination;
+	private double price;
+	private int capacity;
+	private int availableSeats;
 
-	    public Flight() {
-	        // your code goes here
-	    }
+	public Flight() {
+		// Default constructor
+	}
 
-	    public Flight(int id, String flightNumber, String origin, String destination, double price, int capacity, int availableSeats) {
-	    	// your code goes here
-	    }
+	public Flight(int id, String flightNumber, String origin, String destination, double price, int capacity, int availableSeats) {
+		this.id = id;
+		this.flightNumber = flightNumber;
+		this.origin = origin;
+		this.destination = destination;
+		this.price = price;
+		this.capacity = capacity;
+		this.availableSeats = availableSeats;
+	}
 
-	    // Getters and Setters
+	// Getters and Setters
 
-	    public int getId() {
-	    	// your code goes here
-	        return id;
-	    }
+	public int getId() {
+		return id;
+	}
 
-	    public void setId(int id) {
-	    	// your code goes here
-	        this.id = id;
-	    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-	    public String getFlightNumber() {
-	    	// your code goes here
-	        return flightNumber;
-	    }
+	public String getFlightNumber() {
+		return flightNumber;
+	}
 
-	    public void setFlightNumber(String flightNumber) {
-	    	// your code goes here
-	    }
+	public void setFlightNumber(String flightNumber) {
+		this.flightNumber = flightNumber;
+	}
 
-	    public String getOrigin() {
-	    	// your code goes here
-	        return origin;
-	    }
+	public String getOrigin() {
+		return origin;
+	}
 
-	    public void setOrigin(String origin) {
-	    	// your code goes here
-	    }
+	public void setOrigin(String origin) {
+		this.origin = origin;
+	}
 
-	    public String getDestination() {
-	    	// your code goes here
-	        return destination;
-	    }
+	public String getDestination() {
+		return destination;
+	}
 
-	    public void setDestination(String destination) {
-	    	// your code goes here
-	    }
+	public void setDestination(String destination) {
+		this.destination = destination;
+	}
 
-	    public double getPrice() {
-	    	// your code goes here
-	        return price;
-	    }
+	public double getPrice() {
+		return price;
+	}
 
-	    public void setPrice(double price) {
-	    	// your code goes here
-	    }
+	public void setPrice(double price) {
+		this.price = price;
+	}
 
-	    public int getCapacity() {
-	    	// your code goes here
-	        return capacity;
-	    }
+	public int getCapacity() {
+		return capacity;
+	}
 
-	    public void setCapacity(int capacity) {
-	    	// your code goes here
-	    }
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
 
-	    public int getAvailableSeats() {
-	    	// your code goes here
-	        return availableSeats;
-	    }
+	public int getAvailableSeats() {
+		return availableSeats;
+	}
 
-	    public void setAvailableSeats(int availableSeats) {
-	    	// your code goes here
-	    }
+	public void setAvailableSeats(int availableSeats) {
+		this.availableSeats = availableSeats;
+	}
 
 }
